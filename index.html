@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Take a Quiz</title>
+  </head>
+  <style>
+    * {
+      text-align: center;
+    }
+
+    input {
+      margin-right: 15px;
+    }
+
+    .bg_green {
+      background-color: green;
+      color: #fff;
+    }
+  </style>
+  <body>
+    <h4>How well did you know about HNG Internship?</h4>
+
+    <div class="container">
+      <h5>What year was the HNG Internship founded?</h5>
+
+      <div class="options">
+        <div class="box">
+          <label for="">2015 </label>
+          <input type="radio" name="option" id="2012" />
+        </div>
+
+        <div class="box">
+          <label for="">2012 </label>
+          <input type="radio" name="option" id="2015" />
+        </div>
+
+        <div class="box">
+          <label for="">2017 </label>
+          <input type="radio" name="option" id="correct" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h5>What year was the HNG Internship founded?</h5>
+
+      <div class="options">
+        <div class="box">
+          <label for="">2015 </label>
+          <input type="radio" name="option" id="2012" />
+        </div>
+
+        <div class="box">
+          <label for="">2012 </label>
+          <input type="radio" name="option" id="2015" />
+        </div>
+
+        <div class="box">
+          <label for="">2017 </label>
+          <input type="radio" name="option" id="correct" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h5>What year was the HNG Internship founded?</h5>
+
+      <div class="options">
+        <div class="box">
+          <label for="">2015 </label>
+          <input type="radio" name="option" id="2012" />
+        </div>
+
+        <div class="box">
+          <label for="">2012 </label>
+          <input type="radio" name="option" id="2015" />
+        </div>
+
+        <div class="box">
+          <label for="">2017 </label>
+          <input type="radio" name="option" id="correct" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h5>What year was the HNG Internship founded?</h5>
+
+      <div class="options">
+        <div class="box">
+          <label for="">2015 </label>
+          <input type="radio" name="option" id="2012" />
+        </div>
+
+        <div class="box">
+          <label for="">2012 </label>
+          <input type="radio" name="option" id="2015" />
+        </div>
+
+        <div class="box">
+          <label for="">2017 </label>
+          <input type="radio" name="option" id="correct" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h5>What year was the HNG Internship founded?</h5>
+
+      <div class="options">
+        <div class="box">
+          <label for="">2015 </label>
+          <input type="radio" name="option" id="2012" />
+        </div>
+
+        <div class="box">
+          <label for="">2012 </label>
+          <input type="radio" name="option" id="2015" />
+        </div>
+
+        <div class="box">
+          <label for="">2017 </label>
+          <input type="radio" name="option" id="" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let scoreboard = 0;
+      let correct = document.getElementById('correct');
+      correct.addEventListener('click', function () {
+        scoreboard = scoreboard + 1;
+        correct.parentElement.classList.toggle('bg_green');
+      });
+    </script>
+  </body>
+</html>
