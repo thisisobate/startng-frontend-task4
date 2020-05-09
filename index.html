@@ -30,7 +30,7 @@
   <body>
     <h4>How well did you know about HNG Internship?</h4>
 
-    <div class="container">
+    <!-- <div class="container">
       <h5>What year was the HNG Internship founded?</h5>
 
       <div class="options">
@@ -58,9 +58,9 @@
     </div>
 
     <div class="container">
-      <h5>What year was the HNG Internship founded?</h5>
+      <h5>What year was the HNG Internship founded?</h5> -->
 
-      <div class="options">
+    <!-- <div class="options">
         <div class="box">
           <label for="">2015 </label>
           <input type="radio" name="option" id="2012" />
@@ -166,6 +166,58 @@
         scoreboard = scoreboard + 1;
         correct.parentElement.classList.toggle('bg_green');
       });
+    </script> -->
+
+    <div id="questionWrapper"></div>
+    <button id="submit">Submit</button>
+    <div id="result"></div>
+    <script>
+      // declaring variables and assigning variables to DOM elements
+      let questionHolder = document.getElementById('questionWrapper');
+      let resultHolder = document.getElementById('result');
+      let submitButton = document.getElementById('submit');
+
+      let questionsContainer = [
+        // first question
+        {
+          Question: 'How many days are there in a week?',
+          answers: {
+            a: '5',
+            b: '3',
+            c: '7',
+          },
+          correctAnswer: 'c',
+        },
+
+        // second question
+        {
+          Question: 'How many days are there in a week?',
+          answers: {
+            a: '5',
+            b: '3',
+            c: '7',
+          },
+          correctAnswer: 'c',
+        },
+
+        // third question
+        {
+          Question: 'How many days are there in a week?',
+          answers: {
+            a: '5',
+            b: '3',
+            c: '7',
+          },
+          correctAnswer: 'c',
+        },
+      ];
+
+      function buildQuiz() {}
+      buildQuiz();
+
+      function showResult() {}
+
+      submitButton.addEventListener(click, showResult);
     </script>
   </body>
 </html>
